@@ -4,4 +4,4 @@ Plataforma para administración de campañas de publicidad digital
 
 Ambientes: 
 
-Desarrollo : Commit 1
+Desarrollo : Commit 1  --ok
