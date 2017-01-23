@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  
+
+    div.container
+      div.jumbotron
+        h1 Bienvenido a Leadbox v1!
+ 
+               
+      p Listo para empezar?
+      p
+        a.btn.btn-primary(href="/lbapp") Ingresar
+      p
+        span.small No tienes una cuenta?
+        span &nbsp;
+        a.small(href="/lbapp/register") Registrate para obtener una.
