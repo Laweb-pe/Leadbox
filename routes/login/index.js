@@ -11,21 +11,27 @@ var LocalStrategy = require('passport-local').Strategy;
 
 
 
+
+
 /* configurar passport  */
 
 passport.use(new LocalStrategy((username,password,done) => {
 	
 
 	if(username === 'c.hipolito@laweb.pe' && password === '123'){
-		
+		console.log('usuario correcto');
 		return done(null,{name:'Cesar',user:'cesar',id:'1'});
 	}
-	done(null,false,{message:'Sesión no iniciada'});
+	done(null,false,{
+		message:'Sesión no iniciada'
+		
+	});
 }));
 
 passport.serializeUser((user,done) => { done(null,user)});
 passport.deserializeUser((user,done)=>{
 	// logica a BD
+
 	done(null,user);
 });
 

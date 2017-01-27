@@ -1,0 +1,40 @@
+extends ../layout
+
+block content
+  
+
+    div.container
+      div.jumbotron
+        h1 Administrador!
+ 
+               
+      .container
+        .col-sm-6.col-sm-offset-3
+          h2
+            span.fa.fa-sign-in
+            |  Agregar administrador
+          
+          form(action='/test', method='post')
+            .form-group
+              label Nombre
+              input.form-control(type='text', name='ad_name')
+            .form-group
+              label Apellido
+              input.form-control(type='text', name='ad_apell')
+            .form-group
+              label Email
+              input.form-control(type='text', name='ad_email')
+            .form-group
+              label Contraseña
+              input.form-control(type='password', name='ad_pass')
+            .form-group
+              label Rol
+              input.form-control(type='text', name='ad_rol')
+            .form-group
+              label Estado
+              input.form-control(type='text', name='ad_estado')
+
+
+            button.btn.btn-warning.btn-lg(type='submit') Login
+          hr
+          
